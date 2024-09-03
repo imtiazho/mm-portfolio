@@ -7,6 +7,15 @@ const Home = () => {
     <div>
       <NavBar />
       <Intro />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
