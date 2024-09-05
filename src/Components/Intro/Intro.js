@@ -6,6 +6,10 @@ import mywork from "../../Images/my-works.png";
 import blogPic from "../../Images/gfonts.png";
 import { FaExternalLinkAlt, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { AiFillSun, AiOutlineBarcode } from "react-icons/ai";
+import { BiBarcodeReader } from "react-icons/bi";
+import { TiArrowMaximiseOutline } from "react-icons/ti";
+import { TfiLayoutGrid2Thumb } from "react-icons/tfi";
 
 const Intro = () => {
   return (
@@ -24,7 +28,7 @@ const Intro = () => {
               <h5 className="font-medium tracking-[0.5px] text-primary">
                 A WEB DESIGNER
               </h5>
-              <h1 className="text-[42px] font-[700] leading-[40px]">
+              <h1 className="text-[42px] font-[600] leading-[40px]">
                 Mahmida <br /> Masum
               </h1>
               <p className="mt-2 text-[13px] tracking-[0.5px] text-primary font-[300]">
@@ -107,8 +111,31 @@ const Intro = () => {
             <FaExternalLinkAlt />
           </div>
         </div>
-        <div className="w-[50%] box-card p-4">
-          <div className="inside-border-box"></div>
+        <div className="w-[50%] box-card p-4 relative">
+          <div className="inside-border-box p-5 flex flex-col justify-between">
+            <div>
+              <div className="mb-3 mt-14 flex justify-center items-center gap-[5rem]">
+                <TfiLayoutGrid2Thumb
+                  style={{ width: "40px", height: "40px" }}
+                />
+                <AiOutlineBarcode style={{ width: "40px", height: "40px" }} />
+                <BiBarcodeReader style={{ width: "40px", height: "40px" }} />
+                <TiArrowMaximiseOutline
+                  style={{ width: "40px", height: "40px" }}
+                />
+              </div>
+            </div>
+
+            <div className="text-left">
+              <p className="text-primary text-[12px] mb-1">SPECIALIZATION</p>
+              <h5 className="text-[24px] font-medium">Service Offering</h5>
+            </div>
+          </div>
+
+          {/* Link */}
+          <div className="absolute bottom-[3rem] right-[3rem] opacity-55 icon-hov duration-300">
+            <FaExternalLinkAlt />
+          </div>
         </div>
         <div className="w-[25%] box-card p-4">
           <div
@@ -151,7 +178,7 @@ const Intro = () => {
             </div>
             <div className="text-left">
               <p className="text-primary text-[12px] mb-1">STAY WITH ME</p>
-              <h5 className="text-[24px] font-medium">PROFILES</h5>
+              <h5 className="text-[24px] font-medium">Profiles</h5>
             </div>
           </div>
 
