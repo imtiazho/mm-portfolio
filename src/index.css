@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Inter Tight", sans-serif;
+  font-family: "Poppins", system-ui;
   color: #fff;
   font-size: 15px;
   box-sizing: border-box;
@@ -17,5 +17,5 @@ html {
 }
 
 body {
-  background: #0f0f0f;
+  background: #000;
 }
