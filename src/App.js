@@ -6,6 +6,7 @@ import MoreAbout from "./Components/MoreAbout/MoreAbout";
 import Works from "./Components/Works/Works";
 import ProjectDetails from "./Components/ProjectDetails/ProjectDetails";
 import Blog from "./Components/Blog/Blog";
+import ServiceOfferingDetails from "./Components/ServiceOfferingDetails/ServiceOfferingDetails";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         {/* testing route */}
         <Route path="/project-details" element={<ProjectDetails />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/services" element={<ServiceOfferingDetails />}></Route>
       </Routes>
     </div>
   );
