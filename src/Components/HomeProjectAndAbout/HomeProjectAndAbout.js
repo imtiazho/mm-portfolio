@@ -42,7 +42,10 @@ const HomeProjectAndAbout = () => {
             <FaExternalLinkAlt />
           </div>
         </Link>
-        <div className="box-card w-[50%] flex flex-col justify-center p-4 relative">
+        <Link
+          to="/my-works"
+          className="box-card w-[50%] flex flex-col justify-center p-4 relative"
+        >
           <div className="inside-border-box p-5">
             <img className="mb-1 w-full m-auto" src={mywork} alt="" />
 
@@ -56,7 +59,7 @@ const HomeProjectAndAbout = () => {
           <div className="absolute bottom-[2rem] right-[2rem] opacity-55 icon-hov duration-300">
             <FaExternalLinkAlt />
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

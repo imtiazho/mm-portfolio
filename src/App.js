@@ -3,6 +3,9 @@ import "./App.css";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import MoreAbout from "./Components/MoreAbout/MoreAbout";
+import Works from "./Components/Works/Works";
+import ProjectDetails from "./Components/ProjectDetails/ProjectDetails";
+import Blog from "./Components/Blog/Blog";
 
 function App() {
   return (
@@ -11,6 +14,11 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/more-about" element={<MoreAbout />}></Route>
+        <Route path="/my-works" element={<Works />}></Route>
+
+        {/* testing route */}
+        <Route path="/project-details" element={<ProjectDetails />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
       </Routes>
     </div>
   );

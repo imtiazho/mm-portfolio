@@ -1,10 +1,11 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import blogPic from "../../Images/gfonts.png";
+import { Link } from "react-router-dom";
 
 const HomeBlog = () => {
   return (
-    <div className="w-[25%] box-card p-4">
+    <Link to="/blog" className="w-[25%] box-card p-4">
       <div className="inside-border-box p-5">
         <img className="mb-1 w-full m-auto" src={blogPic} alt="" />
 
@@ -18,7 +19,7 @@ const HomeBlog = () => {
       <div className="absolute bottom-[2rem] right-[2rem] opacity-55 icon-hov duration-300">
         <FaExternalLinkAlt />
       </div>
-    </div>
+    </Link>
   );
 };
 

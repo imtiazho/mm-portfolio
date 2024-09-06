@@ -21,7 +21,7 @@ const NavBar = () => {
             About
           </CustomLink>
           <CustomLink
-            to="/works"
+            to="/my-works"
             className="text-[15px] text-primary hover:text-[#fff] cursor-pointer ease-linear duration-300"
           >
             Works
