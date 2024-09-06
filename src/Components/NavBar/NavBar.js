@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Images/logo.png";
+import CustomLink from "../../Hooks/CustomLink";
 
 const NavBar = () => {
   return (
@@ -7,18 +8,30 @@ const NavBar = () => {
       <div className="w-[85%] m-auto py-4 flex justify-between items-center">
         <img src={logo} alt="" className="w-[120px]" />
         <ul className="flex gap-[5rem]">
-          <li className="text-[15px] text-[#fff] cursor-pointer ease-linear duration-300">
+          <CustomLink
+            to="/"
+            className="text-[15px] text-[#fff] cursor-pointer ease-linear duration-300"
+          >
             Home
-          </li>
-          <li className="text-[15px] text-primary hover:text-[#fff] cursor-pointer ease-linear duration-300">
+          </CustomLink>
+          <CustomLink
+            to="/about"
+            className="text-[15px] text-primary hover:text-[#fff] cursor-pointer ease-linear duration-300"
+          >
             About
-          </li>
-          <li className="text-[15px] text-primary hover:text-[#fff] cursor-pointer ease-linear duration-300">
+          </CustomLink>
+          <CustomLink
+            to="/works"
+            className="text-[15px] text-primary hover:text-[#fff] cursor-pointer ease-linear duration-300"
+          >
             Works
-          </li>
-          <li className="text-[15px] text-primary hover:text-[#fff] cursor-pointer ease-linear duration-300">
+          </CustomLink>
+          <CustomLink
+            to="/contact"
+            className="text-[15px] text-primary hover:text-[#fff] cursor-pointer ease-linear duration-300"
+          >
             Contact
-          </li>
+          </CustomLink>
         </ul>
 
         <button

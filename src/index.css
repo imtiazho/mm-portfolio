@@ -8,6 +8,7 @@
   font-size: 15px;
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
@@ -18,4 +19,5 @@ html {
 
 body {
   background: #000;
+  overflow-x: hidden;
 }
