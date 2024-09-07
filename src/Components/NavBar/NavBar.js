@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../Images/logo.png";
 import CustomLink from "../../Hooks/CustomLink";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -34,12 +35,13 @@ const NavBar = () => {
           </CustomLink>
         </ul>
 
-        <button
+        <Link
+          to="/contact"
           style={{ border: ".75px solid rgba(252, 252, 252, 0.05)" }}
           className="btn bg-[#031B29] border-[#272727] py-[12px] px-[30px] text-[16px] font-[500] rounded-[4px] hover:bg-primary duration-500 hover:text-[#000] shadow-none"
         >
           Let's talk
-        </button>
+        </Link>
       </div>
     </div>
   );
