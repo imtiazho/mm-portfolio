@@ -166,7 +166,69 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-3 border">Contact Form</div>
+          <div className="col-span-3">
+            <div className="box-card p-6">
+              <div className="inside-border-box p-4 flex items-stretch gap-2">
+                <div
+                  style={{
+                    background:
+                      "linear-gradient(.0000026635723315848736deg,rgba(0,170,255,.05) 0%,rgba(182,102,195,.05000000074505806) 100%)",
+                    backdropFilter: "blur(26.25249671936035px)",
+                    border: ".75px solid rgb(252 252 252 / 10%)",
+                  }}
+                  className="py-3 px-4 text-[13px] tracking-[0.3px] w-fit"
+                >
+                  Contact
+                </div>
+                <div
+                  style={{
+                    color: "rgba(249, 249, 249, 0.70)",
+                    background:
+                      "linear-gradient(.0000026635723315848736deg,rgba(0,170,255,.05) 0%,rgba(182,102,195,.05000000074505806) 100%)",
+                    backdropFilter: "blur(26.25249671936035px)",
+                    border: ".75px solid rgb(252 252 252 / 10%)",
+                  }}
+                  className="marquee-cus w-full flex items-center"
+                >
+                  <p className="text-[12px] tracking-[0.5px] font-[300] w-full text-accent">
+                    ⌘ It is a long established fact that a reader will
+                    distracted by the readable content of a page when looking an
+                    its readable ⌘
+                  </p>
+                </div>
+              </div>
+
+              {/* Form */}
+              <form className="flex flex-col gap-6 inside-border-box p-4 mt-4">
+                <input
+                  placeholder="Full Name*"
+                  type="text"
+                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black"
+                />
+                <input
+                  placeholder="Email"
+                  type="email"
+                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black"
+                />
+                <input
+                  placeholder="Subject"
+                  type="text"
+                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black"
+                />
+                <textarea
+                  rows="5"
+                  placeholder="Message"
+                  type="text"
+                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black resize-none"
+                ></textarea>
+                <input
+                  className="btn btn-md btn-primary text-white rounded-none"
+                  type="submit"
+                  value="SUBMIT NOW"
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 
