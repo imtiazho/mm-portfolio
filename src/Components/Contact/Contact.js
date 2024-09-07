@@ -6,6 +6,11 @@ import { IoLocationOutline } from "react-icons/io5";
 import { RiFacebookBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { LiaBehanceSquare } from "react-icons/lia";
+import "../Intro/intro.css";
+import Footer from "../Footer/Footer";
+import HomeBlog from "../HomeBlog/HomeBlog";
+import ServiceOffering from "../ServiceOffering/ServiceOffering";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 const Contact = () => {
   return (
@@ -93,11 +98,11 @@ const Contact = () => {
 
             <div className="box-card p-4 mt-4">
               <div className="inside-border-box p-4 text-left">
-                <p className="text-[20px] tracking-[0.5px] mb-4 font-medium">
+                <p className="text-[20px] tracking-[0.5px] mb-4 font-medium text-center">
                   SOCIAL INFO
                 </p>
 
-                <div className="flex items-center justify-around flex-wrap gap-8">
+                <div className="flex items-center justify-center flex-wrap gap-8">
                   <Link
                     style={{
                       background:
@@ -105,7 +110,7 @@ const Contact = () => {
                       backdropFilter: "blur(15px)",
                       border: ".75px solid rgba(251, 251, 251, 0.1)",
                     }}
-                    className="p-5 flex items-center gap-4"
+                    className="p-4 flex items-center gap-4"
                   >
                     <RiFacebookBoxLine
                       style={{
@@ -121,7 +126,7 @@ const Contact = () => {
                       backdropFilter: "blur(15px)",
                       border: ".75px solid rgba(251, 251, 251, 0.1)",
                     }}
-                    className="p-5 flex items-center gap-4"
+                    className="p-4 flex items-center gap-4"
                   >
                     <CiInstagram
                       style={{
@@ -137,7 +142,7 @@ const Contact = () => {
                       backdropFilter: "blur(15px)",
                       border: ".75px solid rgba(251, 251, 251, 0.1)",
                     }}
-                    className="p-5 flex items-center gap-4"
+                    className="p-4 flex items-center gap-4"
                   >
                     <CiLinkedin
                       style={{
@@ -153,7 +158,7 @@ const Contact = () => {
                       backdropFilter: "blur(15px)",
                       border: ".75px solid rgba(251, 251, 251, 0.1)",
                     }}
-                    className="p-5 flex items-center gap-4"
+                    className="p-4 flex items-center gap-4"
                   >
                     <LiaBehanceSquare
                       style={{
@@ -199,30 +204,55 @@ const Contact = () => {
               </div>
 
               {/* Form */}
-              <form className="flex flex-col gap-6 inside-border-box p-4 mt-4">
+              <form
+                style={{
+                  background:
+                    "linear-gradient(rgba(0, 163, 255, 0.06) 100%, rgba(0, 163, 255, 0.5) 0%)",
+                  transition: "0.3s ease",
+                  height: "100%",
+                }}
+                className="flex flex-col gap-6 p-4 mt-4"
+              >
                 <input
+                  style={{
+                    background:
+                      "linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05))",
+                  }}
                   placeholder="Full Name*"
                   type="text"
-                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black"
+                  className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px]"
                 />
                 <input
+                  style={{
+                    background:
+                      "linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05))",
+                  }}
                   placeholder="Email"
                   type="email"
-                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black"
+                  className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px]"
                 />
                 <input
+                  style={{
+                    background:
+                      "linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05))",
+                  }}
                   placeholder="Subject"
                   type="text"
-                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black"
+                  className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px]"
                 />
                 <textarea
-                  rows="5"
+                  style={{
+                    background:
+                      "linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05))",
+                  }}
+                  rows="8"
                   placeholder="Message"
                   type="text"
-                  className="w-full focus:outline-0 h-full bg-white p-[1rem] text-black resize-none"
+                  className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px] resize-none"
                 ></textarea>
                 <input
-                  className="btn btn-md btn-primary text-white rounded-none"
+                  style={{ border: ".75px solid rgba(252, 252, 252, 0.05)" }}
+                  className="btn bg-[#031B29] border-[#272727] py-[12px] px-[30px] text-[16px] font-[500] rounded-[4px] hover:bg-primary duration-500 hover:text-[#000] shadow-none"
                   type="submit"
                   value="SUBMIT NOW"
                 />
@@ -230,20 +260,15 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex mt-5 justify-between gap-5">
+          <HomeBlog />
+          <ServiceOffering />
+          <SocialLinks />
+        </div>
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footer />
     </div>
   );
 };

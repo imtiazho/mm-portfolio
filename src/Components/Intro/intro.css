@@ -24,7 +24,7 @@
 }
 .inside-border-box:hover,
 .single-box:hover {
-  border-color: rgb(14 133 198 / 30%);
+  border-color: #0e85c64d;
 }
 
 .box-card:hover .icon-hov {
@@ -43,6 +43,16 @@
   padding-left: 100%;
   animation: marquee 20s linear infinite;
 }
+
+.input-focus-border {
+  border: 0.75px solid rgba(252, 252, 252, 0.05);
+}
+
+input.input-focus-border:focus,
+textarea.input-focus-border:focus {
+  border: 0.75px solid #0e85c64d;
+}
+
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
