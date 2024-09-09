@@ -8,6 +8,9 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 import LetsWork from "../LetsWork/LetsWork";
 import Footer from "../Footer/Footer";
 import { ImDisplay } from "react-icons/im";
+import { GiNotebook, GiSpellBook } from "react-icons/gi";
+import { PiListMagnifyingGlassBold } from "react-icons/pi";
+import { BsTranslate } from "react-icons/bs";
 
 const ServiceOfferingDetails = () => {
   return (
@@ -18,39 +21,37 @@ const ServiceOfferingDetails = () => {
         <div className="grid grid-cols-7 mt-[3rem] gap-[1.5rem]">
           <div className="col-span-2 box-card p-8 flex flex-col gap-8">
             <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <CiCamera style={{ width: "40px", height: "40px" }} />
-              <p className="text-[18px] text-primary">PHOTOGRAPHY</p>
+              <GiSpellBook style={{ width: "40px", height: "40px" }} />
+              <p className="text-[18px] text-primary">BOOK EDITING</p>
             </div>
 
             <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <ImDisplay style={{ width: "40px", height: "40px" }} />
-              <p className="text-[18px] text-primary">WEB DESIGNING</p>
+              <PiListMagnifyingGlassBold
+                style={{ width: "40px", height: "40px" }}
+              />
+              <p className="text-[18px] text-primary">PROOFREADING</p>
             </div>
 
             <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <CiBarcode style={{ width: "40px", height: "40px" }} />
-              <p className="text-[18px] text-primary">BRANDING</p>
+              <GiNotebook style={{ width: "40px", height: "40px" }} />
+              <p className="text-[18px] text-primary">BOOK WRITING</p>
             </div>
 
             <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <FaCode style={{ width: "40px", height: "40px" }} />
-              <p className="text-[18px] text-primary">DEVELOPMENT</p>
+              <BsTranslate style={{ width: "40px", height: "40px" }} />
+              <p className="text-[18px] text-primary">TRANSLATING</p>
             </div>
           </div>
           <div className="col-span-5">
-            <div className="flex jutify-center items-center gap-[1rem] font-[600]">
-              <img src={star} alt="" />
-              <span className="text-[4.2rem] tracking-[1px] text-primary">
-                MY OFFERINGS
-              </span>
-              <img src={star} alt="" />
-            </div>
+            <p className="font-[600] text-[4.2rem] tracking-[1px] text-primary text-left">
+              MY OFFERINGS
+            </p>
 
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="box-card p-4">
                 <div className="inside-border-box p-6 text-left">
                   <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    PHOTOGRAPHY
+                    BOOK EDITING
                   </p>
                   <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
                     Sit amet luctussd fav venenatis, lectus magna fringilla inis
@@ -63,7 +64,7 @@ const ServiceOfferingDetails = () => {
               <div className="box-card p-4">
                 <div className="inside-border-box p-6 text-left">
                   <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    WEB DESIGNING
+                    PROOFREADING
                   </p>
                   <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
                     Sit amet luctussd fav venenatis, lectus magna fringilla inis
@@ -76,7 +77,7 @@ const ServiceOfferingDetails = () => {
               <div className="box-card p-4">
                 <div className="inside-border-box p-6 text-left">
                   <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    BRANDING
+                    BOOK WRITING
                   </p>
                   <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
                     Sit amet luctussd fav venenatis, lectus magna fringilla inis
@@ -89,7 +90,7 @@ const ServiceOfferingDetails = () => {
               <div className="box-card p-4">
                 <div className="inside-border-box p-6 text-left">
                   <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    DEVELOPMENT
+                    TRANSLATING
                   </p>
                   <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
                     Sit amet luctussd fav venenatis, lectus magna fringilla inis

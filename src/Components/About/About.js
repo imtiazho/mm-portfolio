@@ -23,13 +23,9 @@ const About = () => {
           </div>
 
           <div className="text-left w-[70%]">
-            <div className="flex jutify-center items-center gap-[1rem] font-[600]">
-              <img src={star} alt="" />
-              <span className="text-[4.2rem] tracking-[1px] text-primary">
-                SELF-SUMMARY
-              </span>
-              <img src={star} alt="" />
-            </div>
+            <span className="font-[600] text-[4.2rem] tracking-[1px] text-primary">
+              SELF-SUMMARY
+            </span>
 
             <div className="box-card p-4">
               <div className="inside-border-box p-12 realtive">

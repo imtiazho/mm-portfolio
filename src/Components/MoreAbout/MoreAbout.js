@@ -1,10 +1,11 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import userPic from "../../Images/me.jpg";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
+import { CiLinkedin } from "react-icons/ci";
+import { LiaBehanceSquare } from "react-icons/lia";
 
 const MoreAbout = () => {
   return (
@@ -38,7 +39,7 @@ const MoreAbout = () => {
               </div>
 
               <div className="flex ietms-center flex-wrap justify-center gap-6">
-                <span
+                <Link
                   style={{
                     background:
                       "linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%)",
@@ -47,12 +48,12 @@ const MoreAbout = () => {
                   }}
                   className="p-4"
                 >
-                  <FaXTwitter
+                  <LiaBehanceSquare
                     style={{ width: "20px", height: "20px", color: "#00aaff" }}
                   />
-                </span>
+                </Link>
 
-                <span
+                <Link
                   style={{
                     background:
                       "linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%)",
@@ -64,9 +65,9 @@ const MoreAbout = () => {
                   <FaFacebookSquare
                     style={{ width: "20px", height: "20px", color: "#00aaff" }}
                   />
-                </span>
+                </Link>
 
-                <span
+                <Link
                   style={{
                     background:
                       "linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%)",
@@ -78,9 +79,9 @@ const MoreAbout = () => {
                   <FaInstagramSquare
                     style={{ width: "20px", height: "20px", color: "#00aaff" }}
                   />
-                </span>
+                </Link>
 
-                <span
+                <Link
                   style={{
                     background:
                       "linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%)",
@@ -89,18 +90,19 @@ const MoreAbout = () => {
                   }}
                   className="p-4"
                 >
-                  <IoLogoWhatsapp
+                  <CiLinkedin
                     style={{ width: "20px", height: "20px", color: "#00aaff" }}
                   />
-                </span>
+                </Link>
               </div>
 
-              <button
+              <Link
+                to="/contact"
                 style={{ border: ".75px solid rgba(252, 252, 252, 0.05)" }}
                 className="btn bg-[#031B29] border-[#272727] py-[12px] px-[30px] text-[16px] font-[500] rounded-[4px] hover:bg-primary duration-500 hover:text-[#000] shadow-none"
               >
                 Let's talk
-              </button>
+              </Link>
             </div>
           </div>
           <div className="w-[70%] border box-card p-4">

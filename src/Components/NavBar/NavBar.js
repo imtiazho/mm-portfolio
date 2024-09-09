@@ -7,7 +7,9 @@ const NavBar = () => {
   return (
     <div className="bg-[#040D13]">
       <div className="w-[85%] m-auto py-4 flex justify-between items-center">
-        <img src={logo} alt="" className="w-[120px]" />
+        <Link to="/">
+          <img src={logo} alt="" className="w-[120px]" />
+        </Link>
         <ul className="flex gap-[5rem]">
           <CustomLink
             to="/"

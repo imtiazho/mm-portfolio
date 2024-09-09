@@ -1,6 +1,8 @@
 import React from "react";
-import { FaExternalLinkAlt, FaWhatsapp } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { CiInstagram } from "react-icons/ci";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { RiFacebookBoxLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const SocialLinks = () => {
   return (
@@ -16,7 +18,7 @@ const SocialLinks = () => {
         className="pt-14 pr-5 pb-5 pl-5 flex flex-col justify-between single-box"
       >
         <div className="mb-3 flex justify-center items-center gap-4">
-          <span
+          <Link
             style={{
               background:
                 "linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%)",
@@ -25,11 +27,11 @@ const SocialLinks = () => {
             }}
             className="p-5"
           >
-            <FaWhatsapp
+            <RiFacebookBoxLine
               style={{ width: "32px", height: "32px", color: "#00aaff" }}
             />
-          </span>
-          <span
+          </Link>
+          <Link
             style={{
               background:
                 "linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%)",
@@ -38,10 +40,10 @@ const SocialLinks = () => {
             }}
             className="p-5"
           >
-            <FaXTwitter
+            <CiInstagram
               style={{ width: "32px", height: "32px", color: "#00aaff" }}
             />
-          </span>
+          </Link>
         </div>
         <div className="text-left">
           <p className="text-primary text-[12px] mb-1">STAY WITH ME</p>

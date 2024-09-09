@@ -8,6 +8,7 @@ import ProjectDetails from "./Components/ProjectDetails/ProjectDetails";
 import Blog from "./Components/Blog/Blog";
 import ServiceOfferingDetails from "./Components/ServiceOfferingDetails/ServiceOfferingDetails";
 import Contact from "./Components/Contact/Contact";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/services" element={<ServiceOfferingDetails />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 }

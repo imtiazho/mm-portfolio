@@ -11,13 +11,9 @@ const ProjectDetails = () => {
 
       <div className="w-[85%] m-auto">
         <div className="flex flex-col gap-10 mt-[3rem]">
-          <div className="flex jutify-center items-center gap-[1rem] font-[700]">
-            <img src={star} alt="" />
-            <span className="text-[4.2rem] tracking-[1px] text-primary">
-              MOBILE DESIGNING
-            </span>
-            <img src={star} alt="" />
-          </div>
+          <span className="font-[700] text-[4.2rem] tracking-[1px] text-primary text-left">
+            MOBILE DESIGNING
+          </span>
 
           <div className="grid grid-cols-5 gap-8">
             <div className="col-span-2 box-card p-4">

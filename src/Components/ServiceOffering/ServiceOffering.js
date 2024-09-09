@@ -1,9 +1,8 @@
 import React from "react";
-import { AiOutlineBarcode } from "react-icons/ai";
-import { BiBarcodeReader } from "react-icons/bi";
+import { BsTranslate } from "react-icons/bs";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { TfiLayoutGrid2Thumb } from "react-icons/tfi";
-import { TiArrowMaximiseOutline } from "react-icons/ti";
+import { GiNotebook, GiSpellBook } from "react-icons/gi";
+import { PiListMagnifyingGlassBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
 const ServiceOffering = () => {
@@ -12,10 +11,12 @@ const ServiceOffering = () => {
       <div className="inside-border-box p-5 flex flex-col justify-between">
         <div>
           <div className="mb-3 mt-14 flex justify-center items-center gap-[5rem]">
-            <TfiLayoutGrid2Thumb style={{ width: "40px", height: "40px" }} />
-            <AiOutlineBarcode style={{ width: "40px", height: "40px" }} />
-            <BiBarcodeReader style={{ width: "40px", height: "40px" }} />
-            <TiArrowMaximiseOutline style={{ width: "40px", height: "40px" }} />
+            <GiSpellBook style={{ width: "45px", height: "45px" }} />
+            <PiListMagnifyingGlassBold
+              style={{ width: "45px", height: "45px" }}
+            />
+            <GiNotebook style={{ width: "45px", height: "45px" }} />
+            <BsTranslate style={{ width: "45px", height: "45px" }} />
           </div>
         </div>
 
