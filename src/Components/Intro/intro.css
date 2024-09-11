@@ -48,6 +48,10 @@
   border: 0.75px solid rgba(252, 252, 252, 0.05);
 }
 
+.input-focus-border-error {
+  border: 0.75px solid #ff0000a6;
+}
+
 input.input-focus-border:focus,
 textarea.input-focus-border:focus {
   border: 0.75px solid #0e85c64d;

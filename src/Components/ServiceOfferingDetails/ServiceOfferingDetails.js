@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
-import { CiBarcode, CiCamera } from "react-icons/ci";
-import { FaCode } from "react-icons/fa6";
-import star from "../../Images/star.png";
 import HomeBlog from "../HomeBlog/HomeBlog";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import LetsWork from "../LetsWork/LetsWork";
 import Footer from "../Footer/Footer";
-import { ImDisplay } from "react-icons/im";
 import { GiNotebook, GiSpellBook } from "react-icons/gi";
 import { PiListMagnifyingGlassBold } from "react-icons/pi";
 import { BsTranslate } from "react-icons/bs";
+import HelmetHook from "../../Hooks/HelmetHook";
 
 const ServiceOfferingDetails = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
+
   return (
     <div>
+      <HelmetHook pageName={"Mahmida - Services"} />
       <NavBar />
 
       <div className="w-[85%] m-auto">

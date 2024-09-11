@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 import userPic from "../../Images/me.jpg";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
@@ -6,10 +6,18 @@ import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { CiLinkedin } from "react-icons/ci";
 import { LiaBehanceSquare } from "react-icons/lia";
+import HelmetHook from "../../Hooks/HelmetHook";
 
 const MoreAbout = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
+
   return (
     <div>
+      <HelmetHook pageName={"Mahmida - More About"} />
       <NavBar />
 
       <div className="w-[85%] m-auto">

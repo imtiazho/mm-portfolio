@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import { CiInstagram, CiLinkedin, CiMail } from "react-icons/ci";
-import { MdOutlineLocalPhone, MdOutlineWatchLater } from "react-icons/md";
+import { MdOutlineWatchLater } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { RiFacebookBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -13,11 +13,65 @@ import ServiceOffering from "../ServiceOffering/ServiceOffering";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import { useForm } from "@formspree/react";
 import toast from "react-hot-toast";
+import HelmetHook from "../../Hooks/HelmetHook";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mdknjjnn");
   const formRef = useRef(null);
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
 
+  const [errors, setErrors] = useState({
+    nameError: false,
+    emailError: false,
+    subjectError: false,
+    messageError: false,
+  });
+
+  const handleNameError = (e) => {
+    if (e.target.value === "") {
+      setErrors({ ...errors, nameError: true });
+    } else {
+      setErrors({ ...errors, nameError: false });
+    }
+  };
+
+  const handleEmailError = (e) => {
+    const emailRegEx = /\S+@\S+\.\S+/;
+    const validEmail = emailRegEx.test(e.target.value);
+    if (!validEmail) {
+      setErrors({ ...errors, emailError: true });
+    } else {
+      setErrors({ ...errors, emailError: false });
+    }
+  };
+
+  const handleSubjectError = (e) => {
+    if (e.target.value === "") {
+      setErrors({ ...errors, subjectError: true });
+    } else {
+      setErrors({ ...errors, subjectError: false });
+    }
+  };
+
+  const handleMessageError = (e) => {
+    if (e.target.value === "") {
+      setErrors({ ...errors, messageError: true });
+    } else {
+      setErrors({ ...errors, messageError: false });
+    }
+  };
+
+  const activeButton =
+    errors.nameError ||
+    errors.emailError ||
+    errors.subjectError ||
+    errors.messageError
+      ? true
+      : false;
   useEffect(() => {
     if (state.succeeded) {
       toast.success("Thanks for messaging us!", {
@@ -38,6 +92,7 @@ const Contact = () => {
 
   return (
     <div>
+      <HelmetHook pageName={"Mahmida - Contact"} />
       <NavBar />
       <div className="w-[85%] m-auto">
         <div className="grid grid-cols-5 gap-6 mt-[3rem]">
@@ -242,6 +297,7 @@ const Contact = () => {
                 <div>
                   <label htmlFor="Name"> </label>
                   <input
+                    onBlur={handleNameError}
                     id="Name"
                     name="Name"
                     style={{
@@ -250,12 +306,17 @@ const Contact = () => {
                     }}
                     placeholder="Full Name*"
                     type="text"
-                    className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px]"
+                    className={`w-full focus:outline-0 h-full p-[1rem] text-accent ${
+                      errors.nameError
+                        ? "input-focus-border-error"
+                        : "input-focus-border"
+                    } placeholder:text-[15px]`}
                   />
                 </div>
                 <div>
                   <label htmlFor="Email"> </label>
                   <input
+                    onBlur={handleEmailError}
                     id="Email"
                     name="Email"
                     style={{
@@ -264,12 +325,17 @@ const Contact = () => {
                     }}
                     placeholder="Email"
                     type="email"
-                    className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px]"
+                    className={`w-full focus:outline-0 h-full p-[1rem] text-accent ${
+                      errors.emailError
+                        ? "input-focus-border-error"
+                        : "input-focus-border"
+                    } placeholder:text-[15px]`}
                   />
                 </div>
                 <div>
                   <label htmlFor="subject"> </label>
                   <input
+                    onBlur={handleSubjectError}
                     id="subject"
                     name="subject"
                     style={{
@@ -278,12 +344,17 @@ const Contact = () => {
                     }}
                     placeholder="Subject"
                     type="text"
-                    className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px]"
+                    className={`w-full focus:outline-0 h-full p-[1rem] text-accent ${
+                      errors.subjectError
+                        ? "input-focus-border-error"
+                        : "input-focus-border"
+                    } placeholder:text-[15px]`}
                   />
                 </div>
                 <div>
                   <label htmlFor="Message"> </label>
                   <textarea
+                    onBlur={handleMessageError}
                     id="Message"
                     name="Message"
                     style={{
@@ -293,12 +364,18 @@ const Contact = () => {
                     rows="8"
                     placeholder="Message"
                     type="text"
-                    className="w-full focus:outline-0 h-full p-[1rem] text-accent input-focus-border placeholder:text-[15px] resize-none"
+                    className={`w-full focus:outline-0 h-full p-[1rem] text-accent ${
+                      errors.messageError
+                        ? "input-focus-border-error"
+                        : "input-focus-border"
+                    } placeholder:text-[15px] resize-none`}
                   ></textarea>
                 </div>
                 <input
                   style={{ border: ".75px solid rgba(252, 252, 252, 0.05)" }}
-                  className="btn bg-[#031B29] border-[#272727] py-[12px] px-[30px] text-[16px] font-[500] rounded-[4px] hover:bg-primary duration-500 hover:text-[#000] shadow-none"
+                  className={`btn bg-[#031B29] border-[#272727] py-[12px] px-[30px] text-[16px] font-[500] rounded-[4px] hover:bg-primary duration-500 hover:text-[#000] shadow-none ${
+                    activeButton && "btn-disabled"
+                  }`}
                   type="submit"
                   value="SUBMIT NOW"
                 />

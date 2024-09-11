@@ -8,7 +8,9 @@ const Footer = () => {
 
   return (
     <div className="w-full flex flex-col gap-[2rem] justify-center items-center mt-[6rem] pb-[2rem]">
-      <img className="w-[120px]" src={logo} alt="" />
+      <Link to="/">
+        <img className="w-[120px]" src={logo} alt="" />
+      </Link>
       <ul className="flex justify-center gap-[5rem]">
         <Link
           to="/"

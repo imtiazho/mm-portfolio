@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 import "../Intro/intro.css";
 import project1 from "../../Images/project1.jpeg";
-import project2 from "../../Images/project2.jpeg";
 import project3 from "../../Images/project3.jpeg";
 import project4 from "../../Images/project4.jpeg";
 import project5 from "../../Images/project5.jpeg";
 import project6 from "../../Images/project6.jpeg";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import star from "../../Images/star.png";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
+import HelmetHook from "../../Hooks/HelmetHook";
 
 const Works = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
+
   return (
     <div>
+      <HelmetHook pageName={"Mahmida - Works"} />
       <NavBar />
 
       <div className="w-[85%] m-auto">

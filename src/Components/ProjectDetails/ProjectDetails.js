@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../NavBar/NavBar";
-import projectImage from "../../Images/project-details.jpeg";
-import star from "../../Images/star.png";
+import projectImage1 from "../../Images/project-details1.jpg";
+import projectImage2 from "../../Images/project-details2.jpg";
+import projectImage3 from "../../Images/project-details3.jpg";
+import projectImage4 from "../../Images/project-details4.jpg";
+import projectImage5 from "../../Images/project-details5.jpg";
+import projectImage6 from "../../Images/project-details6.jpg";
 import Footer from "../Footer/Footer";
+import BookModal from "../BookModal/BookModal";
+import HelmetHook from "../../Hooks/HelmetHook";
 
 const ProjectDetails = () => {
+  const [openModal, setOpenModal] = useState(false);
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
+
   return (
     <div>
+      <HelmetHook pageName={"Mahmida - Project Details"} />
       <NavBar />
 
       <div className="w-[85%] m-auto">
@@ -74,12 +88,107 @@ const ProjectDetails = () => {
           </div>
 
           <div className="grid grid-cols-3 gap-8">
-            <img className="w-full object-cover" src={projectImage} alt="" />
-            <img className="w-full object-cover" src={projectImage} alt="" />
-            <img className="w-full object-cover" src={projectImage} alt="" />
-            <img className="w-full object-cover" src={projectImage} alt="" />
-            <img className="w-full object-cover" src={projectImage} alt="" />
-            <img className="w-full object-cover" src={projectImage} alt="" />
+            <div>
+              <label
+                onClick={() => setOpenModal(true)}
+                htmlFor="my-modal-1"
+                className="cursor-pointer"
+              >
+                <img
+                  className="w-full object-cover"
+                  src={projectImage1}
+                  alt=""
+                />
+              </label>
+              {openModal && (
+                <BookModal modalNo={"1"} projectImage={projectImage1} />
+              )}
+            </div>
+
+            <div>
+              <label
+                onClick={() => setOpenModal(true)}
+                htmlFor="my-modal-2"
+                className="cursor-pointer"
+              >
+                <img
+                  className="w-full object-cover"
+                  src={projectImage2}
+                  alt=""
+                />
+              </label>
+              {openModal && (
+                <BookModal modalNo={"2"} projectImage={projectImage2} />
+              )}
+            </div>
+
+            <div>
+              <label
+                onClick={() => setOpenModal(true)}
+                htmlFor="my-modal-3"
+                className="cursor-pointer"
+              >
+                <img
+                  className="w-full object-cover"
+                  src={projectImage3}
+                  alt=""
+                />
+              </label>
+              {openModal && (
+                <BookModal modalNo={"3"} projectImage={projectImage3} />
+              )}
+            </div>
+
+            <div>
+              <label
+                onClick={() => setOpenModal(true)}
+                htmlFor="my-modal-4"
+                className="cursor-pointer"
+              >
+                <img
+                  className="w-full object-cover"
+                  src={projectImage4}
+                  alt=""
+                />
+              </label>
+              {openModal && (
+                <BookModal modalNo={"4"} projectImage={projectImage4} />
+              )}
+            </div>
+
+            <div>
+              <label
+                onClick={() => setOpenModal(true)}
+                htmlFor="my-modal-5"
+                className="cursor-pointer"
+              >
+                <img
+                  className="w-full object-cover"
+                  src={projectImage5}
+                  alt=""
+                />
+              </label>
+              {openModal && (
+                <BookModal modalNo={"5"} projectImage={projectImage5} />
+              )}
+            </div>
+
+            <div>
+              <label
+                onClick={() => setOpenModal(true)}
+                htmlFor="my-modal-6"
+                className="cursor-pointer"
+              >
+                <img
+                  className="w-full object-cover"
+                  src={projectImage6}
+                  alt=""
+                />
+              </label>
+              {openModal && (
+                <BookModal modalNo={"6"} projectImage={projectImage6} />
+              )}
+            </div>
           </div>
         </div>
       </div>

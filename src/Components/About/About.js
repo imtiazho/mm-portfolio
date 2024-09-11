@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 import userPic from "../../Images/me.jpg";
 import "../Intro/intro.css";
-import star from "../../Images/star.png";
 import icon from "../../Images/icon1.png";
 import HomeBlog from "../HomeBlog/HomeBlog";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import LetsWork from "../LetsWork/LetsWork";
 import Footer from "../Footer/Footer";
+import HelmetHook from "../../Hooks/HelmetHook";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
+
   return (
     <div>
+      <HelmetHook pageName={"Mahmida - About"} />
       <NavBar />
 
       <div className="w-[80%] m-auto">

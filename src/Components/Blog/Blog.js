@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../NavBar/NavBar";
 import star from "../../Images/star.png";
 import blogCover from "../../Images/blog-details.jpeg";
@@ -6,22 +6,26 @@ import blogDetailsPic1 from "../../Images/project1.jpeg";
 import blogDetailsPic2 from "../../Images/project3.jpeg";
 import blogDetailsPic3 from "../../Images/project4.jpeg";
 import Footer from "../Footer/Footer";
+import HelmetHook from "../../Hooks/HelmetHook";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
+
   return (
     <div>
+      <HelmetHook pageName={"Mahmida - Blog"} />
       <NavBar />
 
       <div className="flex flex-col gap-10">
         <div className="w-[85%] m-auto">
           <div className="mt-[3rem]">
-            <div className="flex jutify-center items-center gap-[1rem] font-[600]">
-              <img src={star} alt="" />
-              <span className="text-accent text-[3rem] tracking-[1px]">
-                CONSULTED ADMITTING IS POWER
-              </span>
-              <img src={star} alt="" />
-            </div>
+            <p className="text-accent text-[3rem] tracking-[1px] font-[700] text-left">
+              CONSULTED ADMITTING IS POWER
+            </p>
           </div>
         </div>
 
