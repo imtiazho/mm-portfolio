@@ -8,8 +8,52 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 import LetsWork from "../LetsWork/LetsWork";
 import Footer from "../Footer/Footer";
 import HelmetHook from "../../Hooks/HelmetHook";
+import AboutEduExpStruct from "../AboutEduExpStruct/AboutEduExpStruct";
 
 const About = () => {
+  const aboutData = {
+    shortDetails:
+      "I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.",
+    detailsInWide:
+      "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit. Scelerisque fermentum duisi faucibus in ornare quam sisd sit amet luctussd fav venenatis, lectus magna fringilla zac urna, porttitor rhoncus dolor purus non enim praesent cuz elementum sahas facilisis leot.",
+    experienceData: [
+      {
+        _id: 1,
+        year: "2017 - 2023",
+        institution: "Larsen & Toubro",
+        heading: "Front-End Developer",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+      {
+        _id: 2,
+        year: "2007 - 2017",
+        institution: "Bluebase Designs",
+        heading: "Framer Designer & Developer",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+    ],
+    educationData: [
+      {
+        _id: 1,
+        year: "2004 - 2007",
+        institution: "University of California",
+        heading: "Bachelor Degree in Psychology",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+      {
+        _id: 2,
+        year: "2007 - 2009",
+        institution: "University of Texas",
+        heading: "Master Degree in Designing",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+    ],
+  };
+
   useEffect(() => {
     window.scrollTo({
       top: "2rem",
@@ -61,23 +105,9 @@ const About = () => {
                 EXPERIENCE
               </p>
 
-              <div className="">
-                <p className="text-primary mb-[5px]">2017 - 2023</p>
-                <p className="text-accent font-medium text-[20px]">
-                  Front-End Developer
-                </p>
-                <p className="text-primary text-[12px] mt-1">Larsen & Toubro</p>
-              </div>
-
-              <div className="">
-                <p className="text-primary mb-[5px]">2007 - 2017</p>
-                <p className="text-accent font-medium text-[20px]">
-                  Framer Designer & Developer
-                </p>
-                <p className="text-primary text-[12px] mt-1">
-                  Bluebase Designs
-                </p>
-              </div>
+              {aboutData?.experienceData.map((eachData) => (
+                <AboutEduExpStruct eachData={eachData} />
+              ))}
             </div>
           </div>
           <div className="w-full h-full box-card p-4">
@@ -86,25 +116,9 @@ const About = () => {
                 EDUCATION
               </p>
 
-              <div className="">
-                <p className="text-primary mb-[5px]">2004 - 2007</p>
-                <p className="text-accent font-medium text-[20px]">
-                  Bachelor Degree in Psychology
-                </p>
-                <p className="text-primary text-[12px] mt-1">
-                  University of California
-                </p>
-              </div>
-
-              <div className="">
-                <p className="text-primary mb-[5px]">2007 - 2009</p>
-                <p className="text-accent font-medium text-[20px]">
-                  Master Degree in Designing
-                </p>
-                <p className="text-primary text-[12px] mt-1">
-                  University of Texas
-                </p>
-              </div>
+              {aboutData?.educationData.map((eachData) => (
+                <AboutEduExpStruct eachData={eachData} />
+              ))}
             </div>
           </div>
         </div>

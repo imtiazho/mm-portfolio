@@ -1,0 +1,116 @@
+[
+  {
+    "_id": "1",
+    "title": "MOBILE DESIGNING",
+    "compnay": "Seven Studio",
+    "projectImage": "https://i.ibb.co.com/cN2xscV/project1.jpg",
+    "projectDetailsImage": [
+      "https://i.ibb.co.com/Jy3GhKQ/project-details1.jpg",
+      "https://i.ibb.co.com/3CL4Wmh/project-details2.jpg",
+      "https://i.ibb.co.com/4gV3MTY/project-details3.jpg",
+      "https://i.ibb.co.com/7WjGbn7/project-details4.jpg",
+      "https://i.ibb.co.com/CbVv1x3/project-details5.jpg",
+      "https://i.ibb.co.com/Fskcrb8/project-details6.jpg"
+    ],
+    "client": "Jimmy Divison",
+    "clientLoc": "Miranda, USA",
+    "ProjectYear": "2021",
+    "projectDetailsFirstPara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectDetailsSecondPara": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit"
+  },
+  {
+    "_id": "2",
+    "title": "BRANDING",
+    "compnay": "Raven Studio",
+    "projectImage": "https://i.ibb.co.com/7WPXbKQ/project3.jpg",
+    "projectDetailsImage": [
+      "https://i.ibb.co.com/Jy3GhKQ/project-details1.jpg",
+      "https://i.ibb.co.com/3CL4Wmh/project-details2.jpg",
+      "https://i.ibb.co.com/4gV3MTY/project-details3.jpg",
+      "https://i.ibb.co.com/7WjGbn7/project-details4.jpg",
+      "https://i.ibb.co.com/CbVv1x3/project-details5.jpg",
+      "https://i.ibb.co.com/Fskcrb8/project-details6.jpg"
+    ],
+    "client": "Jimmy Divison",
+    "clientLoc": "Miranda, USA",
+    "ProjectYear": "2021",
+    "projectDetailsFirstPara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectDetailsSecondPara": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit"
+  },
+  {
+    "_id": "3",
+    "title": "FLYER DESIGNING",
+    "compnay": "Submarine",
+    "projectImage": "https://i.ibb.co.com/m5JJ2xD/project4.jpg",
+    "projectDetailsImage": [
+      "https://i.ibb.co.com/Jy3GhKQ/project-details1.jpg",
+      "https://i.ibb.co.com/3CL4Wmh/project-details2.jpg",
+      "https://i.ibb.co.com/4gV3MTY/project-details3.jpg",
+      "https://i.ibb.co.com/7WjGbn7/project-details4.jpg",
+      "https://i.ibb.co.com/CbVv1x3/project-details5.jpg",
+      "https://i.ibb.co.com/Fskcrb8/project-details6.jpg"
+    ],
+    "client": "Jimmy Divison",
+    "clientLoc": "Miranda, USA",
+    "ProjectYear": "2021",
+    "projectDetailsFirstPara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectDetailsSecondPara": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit"
+  },
+  {
+    "_id": "4",
+    "title": "PACKET DESIGNING",
+    "compnay": "Hydra Merc",
+    "projectImage": "https://i.ibb.co.com/Fmzf6sR/project5.jpg",
+    "projectDetailsImage": [
+      "https://i.ibb.co.com/Jy3GhKQ/project-details1.jpg",
+      "https://i.ibb.co.com/3CL4Wmh/project-details2.jpg",
+      "https://i.ibb.co.com/4gV3MTY/project-details3.jpg",
+      "https://i.ibb.co.com/7WjGbn7/project-details4.jpg",
+      "https://i.ibb.co.com/CbVv1x3/project-details5.jpg",
+      "https://i.ibb.co.com/Fskcrb8/project-details6.jpg"
+    ],
+    "client": "Jimmy Divison",
+    "clientLoc": "Miranda, USA",
+    "ProjectYear": "2021",
+    "projectDetailsFirstPara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectDetailsSecondPara": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit"
+  },
+  {
+    "_id": "5",
+    "title": "WEB DESIGNING",
+    "compnay": "Dynamic",
+    "projectImage": "https://i.ibb.co.com/YD5RN5z/project6.jpg",
+    "projectDetailsImage": [
+      "https://i.ibb.co.com/Jy3GhKQ/project-details1.jpg",
+      "https://i.ibb.co.com/3CL4Wmh/project-details2.jpg",
+      "https://i.ibb.co.com/4gV3MTY/project-details3.jpg",
+      "https://i.ibb.co.com/7WjGbn7/project-details4.jpg",
+      "https://i.ibb.co.com/CbVv1x3/project-details5.jpg",
+      "https://i.ibb.co.com/Fskcrb8/project-details6.jpg"
+    ],
+    "client": "Jimmy Divison",
+    "clientLoc": "Miranda, USA",
+    "ProjectYear": "2021",
+    "projectDetailsFirstPara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectDetailsSecondPara": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit"
+  },
+  {
+    "_id": "6",
+    "title": "MOBILE DESIGNING",
+    "compnay": "Seven Studio",
+    "projectImage": "https://i.ibb.co.com/cN2xscV/project1.jpg",
+    "projectDetailsImage": [
+      "https://i.ibb.co.com/Jy3GhKQ/project-details1.jpg",
+      "https://i.ibb.co.com/3CL4Wmh/project-details2.jpg",
+      "https://i.ibb.co.com/4gV3MTY/project-details3.jpg",
+      "https://i.ibb.co.com/7WjGbn7/project-details4.jpg",
+      "https://i.ibb.co.com/CbVv1x3/project-details5.jpg",
+      "https://i.ibb.co.com/Fskcrb8/project-details6.jpg"
+    ],
+    "client": "Jimmy Divison",
+    "clientLoc": "Miranda, USA",
+    "ProjectYear": "2021",
+    "projectDetailsFirstPara": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "projectDetailsSecondPara": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam remaperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit"
+  }
+]

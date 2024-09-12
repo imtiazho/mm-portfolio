@@ -10,6 +10,32 @@ import { BsTranslate } from "react-icons/bs";
 import HelmetHook from "../../Hooks/HelmetHook";
 
 const ServiceOfferingDetails = () => {
+  const services = [
+    {
+      _id: "1",
+      sName: "BOOK EDITING",
+      sDetails:
+        "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+    },
+    {
+      _id: "2",
+      sName: "PROOFREADING",
+      sDetails:
+        "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+    },
+    {
+      _id: "3",
+      sName: "BOOK WRITING",
+      sDetails:
+        "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+    },
+    {
+      _id: "4",
+      sName: "TRANSLATING",
+      sDetails:
+        "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+    },
+  ];
   useEffect(() => {
     window.scrollTo({
       top: "2rem",
@@ -52,58 +78,18 @@ const ServiceOfferingDetails = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-4 mt-4">
-              <div className="box-card p-4">
-                <div className="inside-border-box p-6 text-left">
-                  <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    BOOK EDITING
-                  </p>
-                  <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor asna rhoncus dolor purus non enim aberitin
-                    praesent in elementum sahas facilisis leo, vel fringilla est
-                    etisam dignissim.
-                  </p>
+              {services.map((eachService) => (
+                <div key={eachService} className="box-card p-4">
+                  <div className="inside-border-box p-6 text-left">
+                    <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
+                      {eachService.sName}
+                    </p>
+                    <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
+                      {eachService.sDetails}
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="box-card p-4">
-                <div className="inside-border-box p-6 text-left">
-                  <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    PROOFREADING
-                  </p>
-                  <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor asna rhoncus dolor purus non enim aberitin
-                    praesent in elementum sahas facilisis leo, vel fringilla est
-                    etisam dignissim.
-                  </p>
-                </div>
-              </div>
-              <div className="box-card p-4">
-                <div className="inside-border-box p-6 text-left">
-                  <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    BOOK WRITING
-                  </p>
-                  <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor asna rhoncus dolor purus non enim aberitin
-                    praesent in elementum sahas facilisis leo, vel fringilla est
-                    etisam dignissim.
-                  </p>
-                </div>
-              </div>
-              <div className="box-card p-4">
-                <div className="inside-border-box p-6 text-left">
-                  <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                    TRANSLATING
-                  </p>
-                  <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor asna rhoncus dolor purus non enim aberitin
-                    praesent in elementum sahas facilisis leo, vel fringilla est
-                    etisam dignissim.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

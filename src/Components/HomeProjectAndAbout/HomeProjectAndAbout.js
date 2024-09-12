@@ -1,6 +1,6 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import sign from "../../Images/sign.png";
+import sign from "../../Images/sign2.png";
 import mywork from "../../Images/my-works.png";
 import { Link } from "react-router-dom";
 

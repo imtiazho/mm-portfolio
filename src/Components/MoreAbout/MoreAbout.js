@@ -9,6 +9,81 @@ import { LiaBehanceSquare } from "react-icons/lia";
 import HelmetHook from "../../Hooks/HelmetHook";
 
 const MoreAbout = () => {
+  const aboutData = {
+    shortDetails:
+      "I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.",
+    detailsInWide:
+      "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit. Scelerisque fermentum duisi faucibus in ornare quam sisd sit amet luctussd fav venenatis, lectus magna fringilla zac urna, porttitor rhoncus dolor purus non enim praesent cuz elementum sahas facilisis leot.",
+    experienceData: [
+      {
+        _id: 1,
+        year: "2017 - 2023",
+        institution: "Larsen & Toubro",
+        heading: "Front-End Developer",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+      {
+        _id: 2,
+        year: "2007 - 2017",
+        institution: "Bluebase Designs",
+        heading: "Framer Designer & Developer",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+    ],
+    educationData: [
+      {
+        _id: 1,
+        year: "2004 - 2007",
+        institution: "University of California",
+        heading: "Bachelor Degree in Psychology",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+      {
+        _id: 2,
+        year: "2007 - 2009",
+        institution: "University of Texas",
+        heading: "Master Degree in Designing",
+        detailsOfIts:
+          "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor rhoncus dolor purus non enim praesent in elementum sahas facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etisam dignissim diam quis enim lobortis viverra orci sagittis eu volutpat odio facilisis mauris sit.",
+      },
+    ],
+    skills: [
+      {
+        name: "Javascript",
+        percentage: "85%",
+        quality: "Non enim praesent",
+      },
+      {
+        name: "Python",
+        percentage: "85%",
+        quality: "Non enim praesent",
+      },
+      {
+        name: "Figma",
+        percentage: "85%",
+        quality: "Non enim praesent",
+      },
+      {
+        name: "React",
+        percentage: "85%",
+        quality: "Non enim praesent",
+      },
+      {
+        name: "WordPress",
+        percentage: "85%",
+        quality: "Non enim praesent",
+      },
+      {
+        name: "Adobe XD",
+        percentage: "85%",
+        quality: "Non enim praesent",
+      },
+    ],
+  };
+
   useEffect(() => {
     window.scrollTo({
       top: "2rem",
@@ -120,77 +195,47 @@ const MoreAbout = () => {
                   ABOUT ME
                 </p>
                 <p className="text-primary text-[14px] tracking-[0.4px]">
-                  Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                  urna, porttitor rhoncus dolor purus non enim praesent in
-                  elementum sahas facilisis leo, vel fringilla est ullamcorper
-                  eget nulla facilisi etisam dignissim diam quis enim lobortis
-                  viverra orci sagittis eu volutpat odio facilisis mauris sit.
-                  Scelerisque fermentum duisi faucibus in ornare quam sisd sit
-                  amet luctussd fav venenatis, lectus magna fringilla zac urna,
-                  porttitor rhoncus dolor purus non enim praesent cuz elementum
-                  sahas facilisis leot.
+                  {aboutData.detailsInWide}
                 </p>
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-[#fff] font-medium text-[20px] tracking-[0.5px]">
                   EXPERIENCE
                 </p>
-
-                <div className="mb-2">
-                  <p className="text-primary mb-[5px]">2017 - 2023</p>
-                  <p className="text-[#4D66D0] font-medium text-[20px]">
-                    Front-End Developer
-                  </p>
-                  <p className="text-primary text-[12px] mt-1">
-                    Larsen & Toubro
-                  </p>
-                  <p className="text-primary text-[14px] mt-1">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor rhoncus dolor purus non enim praesent in
-                    elementum sahas facilisis leo, vel fringilla est ullamcorper
-                    eget nulla facilisi etisam dignissim diam quis enim lobortis
-                    viverra orci sagittis eu volutpat odio facilisis mauris sit.
-                  </p>
-                </div>
-
-                <div className="mb-2">
-                  <p className="text-primary mb-[5px]">2007 - 2017</p>
-                  <p className="text-[#4D66D0] font-medium text-[20px]">
-                    Framer Designer & Developer
-                  </p>
-                  <p className="text-primary text-[12px] mt-1">
-                    Bluebase Designs
-                  </p>
-                  <p className="text-primary text-[14px] mt-1">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor rhoncus dolor purus non enim praesent in
-                    elementum sahas facilisis leo, vel fringilla est ullamcorper
-                    eget nulla facilisi etisam dignissim diam quis enim lobortis
-                    viverra orci sagittis eu volutpat odio facilisis mauris sit.
-                  </p>
-                </div>
+                {aboutData?.experienceData?.map((eachData) => (
+                  <div key={eachData._id} className="mb-2">
+                    <p className="text-primary mb-[5px]">{eachData.year}</p>
+                    <p className="text-[#4D66D0] font-medium text-[20px]">
+                      {eachData.heading}
+                    </p>
+                    <p className="text-primary text-[12px] mt-1">
+                      {eachData.institution}
+                    </p>
+                    <p className="text-primary text-[14px] mt-1">
+                      {eachData.detailsOfIts}
+                    </p>
+                  </div>
+                ))}
               </div>
               <div className="flex flex-col gap-4">
                 <p className="text-[#fff] font-medium text-[20px] tracking-[0.5px]">
                   EDUCATION
                 </p>
 
-                <div className="mb-2">
-                  <p className="text-primary mb-[5px]">2004 - 2007</p>
-                  <p className="text-[#4D66D0] font-medium text-[20px]">
-                    Bachelor Degree in Psychology
-                  </p>
-                  <p className="text-primary text-[12px] mt-1">
-                    University of California
-                  </p>
-                  <p className="text-primary text-[14px] mt-1">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor rhoncus dolor purus non enim praesent in
-                    elementum sahas facilisis leo, vel fringilla est ullamcorper
-                    eget nulla facilisi etisam dignissim diam quis enim lobortis
-                    viverra orci sagittis eu volutpat odio facilisis mauris sit.
-                  </p>
-                </div>
+                {aboutData?.educationData?.map((eachData) => (
+                  <div key={eachData._id} className="mb-2">
+                    <p className="text-primary mb-[5px]">{eachData.year}</p>
+                    <p className="text-[#4D66D0] font-medium text-[20px]">
+                      {eachData.heading}
+                    </p>
+                    <p className="text-primary text-[12px] mt-1">
+                      {eachData.institution}
+                    </p>
+                    <p className="text-primary text-[14px] mt-1">
+                      {eachData.detailsOfIts}
+                    </p>
+                  </div>
+                ))}
 
                 <div className="mb-2">
                   <p className="text-primary mb-[5px]">2007 - 2009</p>
@@ -216,56 +261,19 @@ const MoreAbout = () => {
                 </p>
 
                 <div className="grid grid-cols-2 gap-8">
-                  <div>
-                    <p className="text-primary mb-[2px] text-[13px]">85%</p>
-                    <p className="text-accent font-medium text-[20px]">
-                      Javascript
-                    </p>
-                    <p className="text-primary text-[12px] mt-1">
-                      Non enim praesent
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary mb-[2px] text-[13px]">85%</p>
-                    <p className="text-accent font-medium text-[20px]">
-                      Python
-                    </p>
-                    <p className="text-primary text-[12px] mt-1">
-                      Non enim praesent
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary mb-[2px] text-[13px]">85%</p>
-                    <p className="text-accent font-medium text-[20px]">Figma</p>
-                    <p className="text-primary text-[12px] mt-1">
-                      Non enim praesent
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary mb-[2px] text-[13px]">85%</p>
-                    <p className="text-accent font-medium text-[20px]">React</p>
-                    <p className="text-primary text-[12px] mt-1">
-                      Non enim praesent
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary mb-[2px] text-[13px]">85%</p>
-                    <p className="text-accent font-medium text-[20px]">
-                      WordPress
-                    </p>
-                    <p className="text-primary text-[12px] mt-1">
-                      Non enim praesent
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary mb-[2px] text-[13px]">85%</p>
-                    <p className="text-accent font-medium text-[20px]">
-                      Adobe XD
-                    </p>
-                    <p className="text-primary text-[12px] mt-1">
-                      Non enim praesent
-                    </p>
-                  </div>
+                  {aboutData?.skills?.map((eachData) => (
+                    <div>
+                      <p className="text-primary mb-[2px] text-[13px]">
+                        {eachData?.percentage}
+                      </p>
+                      <p className="text-accent font-medium text-[20px]">
+                        {eachData?.name}
+                      </p>
+                      <p className="text-primary text-[12px] mt-1">
+                        {eachData?.quality}
+                      </p>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
