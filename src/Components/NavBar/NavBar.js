@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../Images/logo.png";
 import CustomLink from "../../Hooks/CustomLink";
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import ResponsiveNavBar from "../ResponsiveNavBar/ResponsiveNavBar";
 
 const NavBar = () => {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <div className="bg-[#040D13]">
       <div className="w-[85%] m-auto py-4 flex justify-between items-center">
@@ -44,7 +48,18 @@ const NavBar = () => {
         >
           Let's talk
         </Link>
+
+        <div
+          className="cursor-pointer block lg:hidden "
+          onClick={() => setNavOpen(!navOpen)}
+        >
+          <FaBars style={{ width: "22px", height: "22px" }} />
+        </div>
       </div>
+
+      {navOpen && (
+        <ResponsiveNavBar navOpen={navOpen} setNavOpen={setNavOpen} />
+      )}
     </div>
   );
 };
