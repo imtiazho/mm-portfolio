@@ -5,21 +5,25 @@ import { Link } from "react-router-dom";
 
 const LetsWork = () => {
   return (
-    <Link to="/contact" className="w-[50%] box-card p-4 relative">
+    <Link
+      to="/contact"
+      className="col-span-2 box-card p-3 sm:p-4 relative order-1 xl:order-none"
+    >
       <div className="inside-border-box p-5 flex items-end text-start">
-        <h1 className="text-[40px] font-medium leading-[50px]">
+        <h1 className="text-[30px] sm:text-[40px] font-medium leading-[40px] sm:leading-[50px]">
           Let's <br /> Work{" "}
-          <span className="text-[#4D66D0] text-[40px] font-medium leading-[50px]">
+          <span className="text-[#4D66D0] text-[30px] sm:text-[40px] font-medium leading-[50px]">
             Together
           </span>
         </h1>
       </div>
 
-      <div className="absolute left-[5rem] top-[1rem]">
-        <img src={icon} alt="" />
+      <div className="absolute xl:right-[5rem] right-[2rem] top-[1rem]">
+        <img className="h-[50px]" src={icon} alt="" />
       </div>
+
       {/* Link */}
-      <div className="absolute bottom-[3rem] right-[3rem] opacity-55 icon-hov duration-300">
+      <div className="absolute bottom-[1.5rem] sm:bottom-[3rem] right-[1.5rem] sm:right-[3rem] opacity-55 icon-hov duration-300">
         <FaExternalLinkAlt />
       </div>
     </Link>

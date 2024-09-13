@@ -50,7 +50,7 @@ const SocialLinks = () => {
       </div>
 
       {/* Link */}
-      <div className="absolute bottom-[2rem] right-[2rem] opacity-55 icon-hov duration-300">
+      <div className="absolute bottom-[1.5rem] sm:bottom-[2rem] right-[1.5rem] sm:right-[2rem] opacity-55 icon-hov duration-300">
         <FaExternalLinkAlt />
       </div>
     </div>

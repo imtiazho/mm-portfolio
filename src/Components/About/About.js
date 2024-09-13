@@ -123,7 +123,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex mt-5 justify-between gap-5">
+        <div className="grid grid-cols-2 xl:grid-cols-4 mt-3 sm:mt-5 justify-between gap-3 sm:gap-5">
           <HomeBlog />
           <LetsWork />
           <SocialLinks />

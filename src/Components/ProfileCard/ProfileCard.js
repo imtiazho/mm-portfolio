@@ -31,7 +31,7 @@ const ProfileCard = () => {
       </div>
 
       {/* Link */}
-      <div className="absolute bottom-[3rem] right-[3rem] opacity-55 icon-hov duration-300">
+      <div className="absolute bottom-[2rem] sm:bottom-[3rem] right-[2rem] sm:right-[3rem] opacity-55 icon-hov duration-300">
         <FaExternalLinkAlt />
       </div>
     </Link>
