@@ -7,24 +7,24 @@ const ProfileCard = () => {
   return (
     <Link
       to="/about"
-      className="w-full h-full p-6 box-card box-border realtive"
+      className="w-full h-full p-3 sm:p-6 box-card box-border realtive"
     >
-      <div className="inside-border-box flex justify-start items-center drop-shadow-xl gap-[2rem] p-6">
-        <div className="w-[50%] overflow-hidden">
+      <div className="inside-border-box grid grid-cols-7 justify-start items-center drop-shadow-xl gap-[1.5rem] p-6">
+        <div className="overflow-hidden col-span-3">
           <img
             className="rounded-tl-[30px] rounded-br-[30px]"
             src={userPhoto}
             alt=""
           />
         </div>
-        <div className="text-start flex flex-col gap-2">
-          <h5 className="font-medium tracking-[0.5px] text-primary">
+        <div className="text-start flex flex-col sm:gap-3 gap-1 col-span-4">
+          <h5 className="font-medium tracking-[0.5px] text-primary text-[12px] sm:text-[15px]">
             A WEB DESIGNER
           </h5>
-          <h1 className="text-[42px] font-[600] leading-[40px]">
+          <h1 className="sm:text-[42px] text-[30px] font-[600] leading-[35px] sm:leading-[40px]">
             Mahmida <br /> Masum
           </h1>
-          <p className="mt-2 text-[13px] tracking-[0.5px] text-primary font-[300]">
+          <p className="sm:mt-2 mt-1 text-[11px] sm:text-[13px] tracking-[0.5px] text-primary font-[300]">
             I am a Web Designer based in Bangladesh, Dhaka.
           </p>
         </div>

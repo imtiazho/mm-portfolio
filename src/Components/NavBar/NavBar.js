@@ -10,11 +10,11 @@ const NavBar = () => {
 
   return (
     <div className="bg-[#040D13]">
-      <div className="w-[85%] m-auto py-4 flex justify-between items-center">
+      <div className="w-[95%] sm:w-[85%] m-auto py-4 flex justify-between items-center">
         <Link to="/">
-          <img src={logo} alt="" className="w-[120px]" />
+          <img src={logo} alt="" className="md:w-[120px] w-[100px]" />
         </Link>
-        <ul className="flex gap-[5rem]">
+        <ul className="lg:flex gap-[5rem] hidden">
           <CustomLink
             to="/"
             className="text-[15px] text-[#fff] cursor-pointer ease-linear duration-300"
@@ -44,13 +44,13 @@ const NavBar = () => {
         <Link
           to="/contact"
           style={{ border: ".75px solid rgba(252, 252, 252, 0.05)" }}
-          className="btn bg-[#031B29] border-[#272727] py-[12px] px-[30px] text-[16px] font-[500] rounded-[4px] hover:bg-primary duration-500 hover:text-[#000] shadow-none"
+          className="btn bg-[#031B29] border-[#272727] py-[12px] px-[30px] text-[16px] font-[500] rounded-[4px] hover:bg-primary duration-500 hover:text-[#000] shadow-none hidden lg:block"
         >
           Let's talk
         </Link>
 
         <div
-          className="cursor-pointer block lg:hidden "
+          className="cursor-pointer block lg:hidden"
           onClick={() => setNavOpen(!navOpen)}
         >
           <FaBars style={{ width: "22px", height: "22px" }} />

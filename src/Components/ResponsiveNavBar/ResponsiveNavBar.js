@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const ResponsiveNavBar = ({ navOpen, setNavOpen }) => {
   return (
     <div className="h-full w-full bg-black z-[11] top-0 absolute">
-      <div className="relative ">
+      <div className="relative">
         <RxCross2
-          className="absolute text-white right-[7.5%] top-[27px] cursor-pointer border border-white text-[26px] p-1"
+          className="absolute text-white top-[2.3%] right-[2.5%] sm:right-[7.5%] top-[27px] cursor-pointer border border-white text-[26px] p-1"
           onClick={() => setNavOpen(!navOpen)}
         />
         <ul className="flex flex-col pt-[2rem] items-center justify-around h-[100vh]">

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const SocialLinks = () => {
   return (
-    <div className="w-[25%] box-card p-4">
+    <div className="col-span-1 box-card p-3 sm:p-4 order-3 xl:order-none">
       <div
         style={{
           background:
@@ -17,7 +17,7 @@ const SocialLinks = () => {
         }}
         className="pt-14 pr-5 pb-5 pl-5 flex flex-col justify-between single-box"
       >
-        <div className="mb-3 flex justify-center items-center gap-4">
+        <div className="mb-4 sm:mb-3 flex justify-center items-center gap-4">
           <Link
             style={{
               background:
@@ -25,11 +25,9 @@ const SocialLinks = () => {
               backdropFilter: "blur(15px)",
               border: ".75px solid rgba(251, 251, 251, 0.1)",
             }}
-            className="p-5"
+            className="p-3 sm:p-5"
           >
-            <RiFacebookBoxLine
-              style={{ width: "32px", height: "32px", color: "#00aaff" }}
-            />
+            <RiFacebookBoxLine className="w-[25px] sm:w-[32px] h-[25px] sm:h-[32px]" />
           </Link>
           <Link
             style={{
@@ -38,16 +36,16 @@ const SocialLinks = () => {
               backdropFilter: "blur(15px)",
               border: ".75px solid rgba(251, 251, 251, 0.1)",
             }}
-            className="p-5"
+            className="p-3 sm:p-5"
           >
-            <CiInstagram
-              style={{ width: "32px", height: "32px", color: "#00aaff" }}
-            />
+            <CiInstagram className="w-[25px] sm:w-[32px] h-[25px] sm:h-[32px]" />
           </Link>
         </div>
         <div className="text-left">
-          <p className="text-primary text-[12px] mb-1">STAY WITH ME</p>
-          <h5 className="text-[24px] font-medium">Profiles</h5>
+          <p className="text-primary text-[10px] sm:text-[12px] mb-[1px] sm:mb-1">
+            STAY WITH ME
+          </p>
+          <h5 className="text-[18px] sm:text-[24px] font-medium">Profiles</h5>
         </div>
       </div>
 
