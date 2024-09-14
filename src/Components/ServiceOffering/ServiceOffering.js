@@ -33,7 +33,7 @@ const ServiceOffering = () => {
 
       {/* Link */}
       <div className="absolute bottom-[2rem] sm:bottom-[3rem] right-[2rem] sm:right-[3rem] opacity-55 icon-hov duration-300">
-        <FaExternalLinkAlt />
+        <FaExternalLinkAlt className="sm:text-[15px] text-[12px]" />
       </div>
     </Link>
   );

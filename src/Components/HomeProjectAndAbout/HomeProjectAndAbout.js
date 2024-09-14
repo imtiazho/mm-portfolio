@@ -33,7 +33,7 @@ const HomeProjectAndAbout = () => {
           to="more-about"
           className="box-card flex flex-col justify-center p-3 sm:p-4 relative"
         >
-          <div className="inside-border-box p-5 sm:block flex flex-col">
+          <div className="inside-border-box p-4 sm:p-5 sm:block flex flex-col">
             <img className="mb-1 w-full m-auto" src={sign} alt="" />
 
             <div className="text-left flex flex-col justify-around">
@@ -48,15 +48,15 @@ const HomeProjectAndAbout = () => {
 
           {/* Link */}
           <div className="absolute bottom-[1.5rem] sm:bottom-[2rem] right-[1.5rem] sm:right-[2rem] opacity-55 icon-hov duration-300">
-            <FaExternalLinkAlt />
+            <FaExternalLinkAlt className="sm:text-[15px] text-[12px]" />
           </div>
         </Link>
         <Link
           to="/my-works"
           className="box-card flex flex-col justify-center p-3 sm:p-4 relative"
         >
-          <div className="inside-border-box p-5">
-            <img className="mb-1 w-full m-auto" src={mywork} alt="" />
+          <div className="inside-border-box p-4 sm:p-5">
+            <img className="mb-2 sm:mb-1 w-full m-auto" src={mywork} alt="" />
 
             <div className="text-left">
               <p className="text-primary text-[10px] sm:text-[12px] mb-[1px] sm:mb-1">
@@ -70,7 +70,7 @@ const HomeProjectAndAbout = () => {
 
           {/* Link */}
           <div className="absolute bottom-[1.5rem] sm:bottom-[2rem] right-[1.5rem] sm:right-[2rem] opacity-55 icon-hov duration-300">
-            <FaExternalLinkAlt />
+            <FaExternalLinkAlt className="sm:text-[15px] text-[12px]" />
           </div>
         </Link>
       </div>

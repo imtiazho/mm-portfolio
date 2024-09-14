@@ -9,9 +9,9 @@ const HomeBlog = () => {
       to="/blog"
       className="col-span-1 box-card p-3 sm:p-4 order-2 xl:order-none"
     >
-      <div className="inside-border-box p-5 flex flex-col justify-around">
+      <div className="inside-border-box p-4 sm:p-5 flex flex-col justify-around">
         <img
-          className="sm:mb-1 w-[80px] sm:w-[100px] h-[80px] sm:h-[100px] m-auto"
+          className="sm:mb-1 w-[60px] sm:w-[100px] h-[60px] sm:h-[100px] m-auto"
           src={blogPic}
           alt=""
         />
@@ -26,7 +26,7 @@ const HomeBlog = () => {
 
       {/* Link */}
       <div className="absolute bottom-[1.5rem] sm:bottom-[2rem] right-[1.5rem] sm:right-[2rem] opacity-55 icon-hov duration-300">
-        <FaExternalLinkAlt />
+        <FaExternalLinkAlt className="sm:text-[15px] text-[12px]" />
       </div>
     </Link>
   );

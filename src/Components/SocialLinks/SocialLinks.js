@@ -15,7 +15,7 @@ const SocialLinks = () => {
           boxShadow: "0 1px 2px #00000040",
           height: "100%",
         }}
-        className="pt-14 pr-5 pb-5 pl-5 flex flex-col justify-between single-box"
+        className="pt-12 sm:pt-14 pr-5 pb-4 sm:pb-5 pl-4 sm:pl-5 flex flex-col justify-between single-box gap-[2px] sm:gap-[0px]"
       >
         <div className="mb-4 sm:mb-3 flex justify-center items-center gap-4">
           <Link
@@ -51,7 +51,7 @@ const SocialLinks = () => {
 
       {/* Link */}
       <div className="absolute bottom-[1.5rem] sm:bottom-[2rem] right-[1.5rem] sm:right-[2rem] opacity-55 icon-hov duration-300">
-        <FaExternalLinkAlt />
+        <FaExternalLinkAlt className="sm:text-[15px] text-[12px]" />
       </div>
     </div>
   );
