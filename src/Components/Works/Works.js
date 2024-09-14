@@ -158,35 +158,33 @@ const Works = () => {
       <HelmetHook pageName={"Mahmida - Works"} />
       <NavBar />
 
-      <div className="w-[85%] m-auto">
-        <div className="flex jutify-center items-center gap-[1rem] font-[600] mt-[3rem] mb-[1rem]">
-          <span className="text-[4.2rem] tracking-[1px] text-primary">
-            ALL PROJECTS
-          </span>
-        </div>
-        <div className="grid grid-cols-3 gap-6 items-end">
+      <div className="w-[95%] sm:w-[85%] m-auto">
+        <p className="font-[600] mt-[1rem] sm:mt-[3rem] mb-[0.3rem] sm:mb-[1rem] text-[3rem] md:text-[4.2rem] tracking-[1px] text-primary text-left">
+          ALL PROJECTS
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-end">
           {projects.map((eachData) => (
             <Link
               key={eachData._id}
               to={`/project-details/${eachData._id}`}
-              className="box-card p-4 relative"
+              className="box-card p-3 sm:p-4 relative"
             >
-              <div className="inside-border-box p-4 flex flex-col gap-5">
+              <div className="inside-border-box p-3 sm:p-4 flex flex-col gap-5">
                 <img src={eachData.projectImage} alt="" />
 
                 <div className="text-left">
-                  <p className="text-primary text-[13px] tracking-[0.5px]">
+                  <p className="text-primary text-[10px] sm:text-[13px] tracking-[0.5px]">
                     {eachData.title}
                   </p>
-                  <p className="text-accent text-[26px] font-semibold">
+                  <p className="text-accent text-[23px] sm:text-[26px] font-semibold">
                     {eachData.compnay}
                   </p>
                 </div>
               </div>
 
               {/* Link */}
-              <div className="absolute bottom-[3rem] right-[3rem] opacity-55 icon-hov duration-300">
-                <FaExternalLinkAlt />
+              <div className="absolute bottom-[2rem] sm:bottom-[3rem] right-[2rem] sm:right-[3rem] opacity-55 icon-hov duration-300">
+                <FaExternalLinkAlt className="sm:text-[15px] text-[12px]" />
               </div>
             </Link>
           ))}

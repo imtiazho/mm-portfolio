@@ -65,43 +65,43 @@ const About = () => {
       <HelmetHook pageName={"Mahmida - About"} />
       <NavBar />
 
-      <div className="w-[80%] m-auto">
-        <div className="flex items-end gap-[1.5rem] mt-[3rem]">
-          <div className="box-card w-[30%] p-4">
-            <div className="inside-border-box p-4">
-              <img src={userPic} alt="" />
+      <div className="w-[95%] sm:w-[80%] m-auto">
+        <div className="grid xl:grid-cols-10 items-end gap-[1rem] sm:gap-[1.5rem] mt-[1rem] sm:mt-[3rem]">
+          <div className="xl:col-span-3 box-card p-3 sm:p-4">
+            <div className="inside-border-box p-3 sm:p-4">
+              <img cl src={userPic} alt="" />
             </div>
           </div>
 
-          <div className="text-left w-[70%]">
-            <span className="font-[600] text-[4.2rem] tracking-[1px] text-primary">
+          <div className="text-left xl:col-span-7">
+            <span className="font-[600] text-[4.2rem] tracking-[1px] text-primary hidden xl:block">
               SELF-SUMMARY
             </span>
 
-            <div className="box-card p-4">
-              <div className="inside-border-box p-12 realtive">
-                <h1 className="text-[35px] font-[600] mb-3 text-primary">
+            <div className="box-card p-3 sm:p-4">
+              <div className="inside-border-box pt-12 pr-4 pb-4 pl-4 sm:pt-12 sm:pr-12 sm:pb-12 sm:pl-12 realtive">
+                <h1 className="text-[25px] sm:text-[35px] font-[600] mb-2 sm:mb-3 text-primary">
                   Mahmida Masum
                 </h1>
-                <p className="text-[15px] text-primary">
+                <p className="text-[13px] font-[400] sm:text-[15px] text-primary">
                   I am a San francisco-based product designer with a focus on
                   web design, illustration, a visual development. I have a
                   diverse range of experience having worked across various
                   fields and industries.
                 </p>
 
-                <div className="absolute right-[5rem] top-[1rem]">
-                  <img src={icon} alt="" />
+                <div className="absolute right-[4rem] sm:right-[5rem] top-[1rem]">
+                  <img className="h-[50px] sm:h-[75px]" src={icon} alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex items-center justify-between gap-[1.5rem] mt-6">
-          <div className="w-full h-full box-card p-4">
-            <div className="inside-border-box p-8 text-left flex flex-col gap-[2rem]">
-              <p className="text-[#fff] font-medium text-[20px] tracking-[0.5px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] sm:gap-[1.5rem] mt-4 sm:mt-6">
+          <div className="w-full h-full box-card p-3 sm:p-4">
+            <div className="inside-border-box p-4 sm:p-8 text-left flex flex-col gap-[1rem] sm:gap-[2rem]">
+              <p className="text-[#fff] font-medium text-[18px] sm:text-[20px] tracking-[0.5px]">
                 EXPERIENCE
               </p>
 
@@ -110,9 +110,9 @@ const About = () => {
               ))}
             </div>
           </div>
-          <div className="w-full h-full box-card p-4">
-            <div className="inside-border-box p-8 text-left flex flex-col gap-[2rem]">
-              <p className="text-[#fff] font-medium text-[20px] tracking-[0.5px]">
+          <div className="w-full h-full box-card p-3 sm:p-4">
+            <div className="inside-border-box p-4 sm:p-8 text-left flex flex-col gap-[1rem] sm:gap-[2rem]">
+              <p className="text-[#fff] font-medium text-[18px] sm:text-[20px] tracking-[0.5px]">
                 EDUCATION
               </p>
 
