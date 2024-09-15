@@ -10,7 +10,7 @@ const ResponsiveNavBar = ({ navOpen, setNavOpen }) => {
           className="absolute text-white top-[20px] right-[2.5%] sm:right-[7.5%] top-[27px] cursor-pointer border border-white text-[26px] p-1"
           onClick={() => setNavOpen(!navOpen)}
         />
-        <ul className="flex flex-col pt-[2rem] items-center justify-around h-[100vh]">
+        <ul className="flex flex-col pt-[2rem] items-center justify-evenly h-[100vh]">
           <li className="md:text-[14px] text-[11px] font-medium text-primary hover:text-white duration-300">
             <Link to="/">Home</Link>
           </li>
