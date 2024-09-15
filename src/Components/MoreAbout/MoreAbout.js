@@ -8,8 +8,6 @@ import {
 } from "react-icons/fa";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
-import { CiLinkedin } from "react-icons/ci";
-import { LiaBehanceSquare } from "react-icons/lia";
 import HelmetHook from "../../Hooks/HelmetHook";
 import { AiOutlineBehanceSquare } from "react-icons/ai";
 
@@ -89,11 +87,11 @@ const MoreAbout = () => {
     ],
   };
 
-  // useEffect(() => {
-  //   window.scrollTo({
-  //     top: "2rem",
-  //   });
-  // }, []);
+  useEffect(() => {
+    window.scrollTo({
+      top: "2rem",
+    });
+  }, []);
 
   return (
     <div>

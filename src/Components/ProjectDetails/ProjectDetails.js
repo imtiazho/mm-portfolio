@@ -18,44 +18,44 @@ const ProjectDetails = () => {
 
   const targetedProject = data?.find((project) => project._id === projectId);
 
-  useEffect(() => {
-    window.scrollTo({
-      top: "2rem",
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({
+  //     top: "2rem",
+  //   });
+  // }, []);
 
   return (
     <div>
       <HelmetHook pageName={"Mahmida - Project Details"} />
       <NavBar />
 
-      <div className="w-[85%] m-auto">
-        <div className="flex flex-col gap-10 mt-[3rem]">
-          <span className="font-[700] text-[4.2rem] tracking-[1px] text-primary text-left">
+      <div className="w-[95%] sm:w-[85%] m-auto">
+        <div className="flex flex-col gap-4 md:gap-6 lg:gap-10 mt-[1rem] sm:mt-[3rem]">
+          <span className="font-[700] text-[2rem] md:text-[4.2rem] tracking-[1px] text-primary text-left mb-[-8px] sm:mb-0">
             {targetedProject?.title}
           </span>
 
-          <div className="grid grid-cols-5 gap-8">
-            <div className="col-span-2 box-card p-4">
-              <div className="flex flex-col gap-5 text-left inside-border-box p-8">
-                <p className="text-xl font-[500] text-accent">
+          <div className="grid grid-cols-1 xl:grid-cols-5 gap-3 sm:gap-5 sm:gap-8">
+            <div className="xl:col-span-2 box-card p-3 sm:p-4">
+              <div className="flex flex-col gap-3 sm:gap-5 text-left inside-border-box p-5 sm:p-8">
+                <p className="text-[18px] sm:text-xl font-[500] text-accent">
                   PROJECT DETAILS:
                 </p>
 
                 <div className="grid grid-cols-2 gap-24">
                   <div>
-                    <p className="text-xl font-[500] mb-[2px] text-accent">
+                    <p className="text-[17px] sm:text-xl font-[500] mb-[3px] sm:mb-[2px] text-accent">
                       Project
                     </p>
-                    <p className="text-[14px] text-primary">
+                    <p className="text-[11px] sm:text-[14px] text-primary">
                       {targetedProject?.title}
                     </p>
                   </div>
                   <div>
-                    <p className="text-xl font-[500] mb-[2px] text-accent">
+                    <p className="text-[17px] sm:text-xl font-[500] mb-[3px] sm:mb-[2px] text-accent">
                       Clients
                     </p>
-                    <p className="text-[14px] text-primary">
+                    <p className="text-[11px] sm:text-[14px] text-primary">
                       {targetedProject?.client}
                     </p>
                   </div>
@@ -63,18 +63,18 @@ const ProjectDetails = () => {
 
                 <div className="grid grid-cols-2 gap-24">
                   <div>
-                    <p className="md:text-xl text-[16px] font-[500] mb-[2px] text-accent">
+                    <p className="text-[17px] sm:text-xl font-[500] mb-[3px] sm:mb-[2px] text-accent">
                       Location
                     </p>
-                    <p className="text-[14px] text-primary">
+                    <p className="text-[11px] sm:text-[14px] text-primary">
                       {targetedProject?.clientLoc}
                     </p>
                   </div>
                   <div>
-                    <p className="md:text-xl text-[16px] font-[500] mb-[2px] text-accent">
+                    <p className="text-[17px] sm:text-xl font-[500] mb-[3px] sm:mb-[2px] text-accent">
                       Project Year
                     </p>
-                    <p className="text-[14px] text-primary">
+                    <p className="text-[11px] sm:text-[14px] text-primary">
                       {targetedProject?.ProjectYear}
                     </p>
                   </div>
@@ -82,17 +82,19 @@ const ProjectDetails = () => {
               </div>
             </div>
 
-            <div className="box-card col-span-3 p-4">
-              <div className="text-left text-[14px] font-[300] leading-loose inside-border-box p-4">
-                <p>{targetedProject?.projectDetailsFirstPara}</p>
-                <p className="md:mt-4 mt-2">
+            <div className="box-card xl:col-span-3 p-3 sm:p-4">
+              <div className="inside-border-box p-3 sm:p-4">
+                <p className="text-left text-[11px] sm:text-[14px] sm:text-[14px] font-[300] leading-loose">
+                  {targetedProject?.projectDetailsFirstPara}
+                </p>
+                <p className="md:mt-4 mt-2 text-left text-[11px] sm:text-[14px] sm:text-[14px] font-[300] leading-loose">
                   {targetedProject?.projectDetailsSecondPara}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-8">
             {targetedProject?.projectDetailsImage.map((eachImage, index) => (
               <div key={index}>
                 <label

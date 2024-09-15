@@ -7,15 +7,12 @@ const ResponsiveNavBar = ({ navOpen, setNavOpen }) => {
     <div className="h-full w-full bg-black z-[11] top-0 absolute block lg:hidden">
       <div className="relative">
         <RxCross2
-          className="absolute text-white top-[2.1%] right-[2.5%] sm:right-[7.5%] top-[27px] cursor-pointer border border-white text-[26px] p-1"
+          className="absolute text-white top-[20px] right-[2.5%] sm:right-[7.5%] top-[27px] cursor-pointer border border-white text-[26px] p-1"
           onClick={() => setNavOpen(!navOpen)}
         />
         <ul className="flex flex-col pt-[2rem] items-center justify-around h-[100vh]">
           <li className="md:text-[14px] text-[11px] font-medium text-primary hover:text-white duration-300">
             <Link to="/">Home</Link>
-          </li>
-          <li className="md:text-[14px] text-[11px] font-medium text-primary hover:text-white duration-300">
-            <Link to="/about">ABOUT</Link>
           </li>
           <li className="md:text-[14px] text-[11px] font-medium text-primary hover:text-white duration-300">
             <Link to="/my-works">WORKS</Link>
