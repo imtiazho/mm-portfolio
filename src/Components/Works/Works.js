@@ -159,7 +159,7 @@ const Works = () => {
       <NavBar />
 
       <div className="w-[95%] sm:w-[85%] m-auto">
-        <p className="font-[600] mt-[1rem] sm:mt-[3rem] mb-[0.3rem] sm:mb-[1rem] text-[3rem] md:text-[4.2rem] tracking-[1px] text-primary text-left">
+        <p className="font-[700] mt-[1.5rem] sm:mt-[3rem] mb-[0.5rem] sm:mb-[1rem] text-[2rem] md:text-[4.2rem] tracking-[1px] text-primary text-left">
           ALL PROJECTS
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-end">
