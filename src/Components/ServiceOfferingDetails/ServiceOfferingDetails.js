@@ -16,26 +16,31 @@ const ServiceOfferingDetails = () => {
       sName: "BOOK EDITING",
       sDetails:
         "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+      icon: <GiSpellBook />,
     },
     {
       _id: "2",
       sName: "PROOFREADING",
       sDetails:
         "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+      icon: <PiListMagnifyingGlassBold />,
     },
     {
       _id: "3",
       sName: "BOOK WRITING",
       sDetails:
         "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+      icon: <GiNotebook />,
     },
     {
       _id: "4",
       sName: "TRANSLATING",
       sDetails:
         "Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.",
+      icon: <BsTranslate />,
     },
   ];
+
   useEffect(() => {
     window.scrollTo({
       top: "2rem",
@@ -47,54 +52,33 @@ const ServiceOfferingDetails = () => {
       <HelmetHook pageName={"Mahmida - Services"} />
       <NavBar />
 
-      <div className="w-[85%] m-auto">
-        <div className="grid grid-cols-7 mt-[3rem] gap-[1.5rem]">
-          <div className="col-span-2 box-card p-8 flex flex-col gap-8">
-            <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <GiSpellBook style={{ width: "40px", height: "40px" }} />
-              <p className="text-[18px] text-primary">BOOK EDITING</p>
-            </div>
+      <div className="w-[95%] sm:w-[85%] m-auto">
+        <div className="mt-[1rem] sm:mt-[3rem] grid grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-6 box-card p-3 sm:p-6">
+          {services.map((eachData) => (
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="border w-full h-full relative inside-border-box px-8 py-14 sm:py-16 flex flex-col items-center gap-5 sm:gap-6"
+            >
+              <div className="service-icon">{eachData?.icon}</div>
 
-            <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <PiListMagnifyingGlassBold
-                style={{ width: "40px", height: "40px" }}
-              />
-              <p className="text-[18px] text-primary">PROOFREADING</p>
-            </div>
+              <p className="text-[23px] sm:text-[30px] text-primary font-semibold tracking-[1px]">
+                {eachData?.sName}
+              </p>
 
-            <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <GiNotebook style={{ width: "40px", height: "40px" }} />
-              <p className="text-[18px] text-primary">BOOK WRITING</p>
-            </div>
+              <div className="w-full bg-[#555555] h-[1px]"></div>
 
-            <div className="inside-border-box flex items-center gap-[2rem] p-6">
-              <BsTranslate style={{ width: "40px", height: "40px" }} />
-              <p className="text-[18px] text-primary">TRANSLATING</p>
+              <p className="text-primary text-[11px] sm:text-[13px] tracking-[0.3px] md:leading-[26px] leading-[23px]">
+                {eachData.sDetails}
+              </p>
             </div>
-          </div>
-          <div className="col-span-5">
-            <p className="font-[600] text-[4.2rem] tracking-[1px] text-primary text-left">
-              MY OFFERINGS
-            </p>
-
-            <div className="grid grid-cols-2 gap-4 mt-4">
-              {services.map((eachService) => (
-                <div key={eachService} className="box-card p-4">
-                  <div className="inside-border-box p-6 text-left">
-                    <p className="text-[16px] text-accent mb-3 tracking-[0.5px] font-medium">
-                      {eachService.sName}
-                    </p>
-                    <p className="text-primary text-[14px] tracking-[0.3px] leading-[26px]">
-                      {eachService.sDetails}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
-
-        <div className="flex mt-5 justify-between gap-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="grid grid-cols-2 xl:grid-cols-4 mt-3 sm:mt-5 justify-between gap-3 sm:gap-5"
+        >
           <HomeBlog />
           <LetsWork />
           <SocialLinks />

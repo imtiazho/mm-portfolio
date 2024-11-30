@@ -96,7 +96,11 @@ const Contact = () => {
       <NavBar />
       <div className="w-[95%] sm:w-[85%] m-auto">
         <div className="grid grid-cols-1 xl:grid-cols-5 gap-3 sm:gap-6 mt-[1rem] sm:mt-[3rem]">
-          <div className="xl:col-span-2 flex flex-col justify-between gap-4 order-2 xl:order-none">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="xl:col-span-2 flex flex-col justify-between gap-4 order-2 xl:order-none"
+          >
             <div className="box-card p-3 sm:p-4 grid grid-cols-1 gap-3 sm:gap-6">
               <div className="inside-border-box p-4 sm:p-8 flex items-center gap-4">
                 <div
@@ -250,7 +254,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-3 order-1 xl:order-none">
-            <div className="box-card p-3 sm:p-6">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="box-card p-3 sm:p-6"
+            >
               <div className="inside-border-box p-2 sm:p-4 flex items-stretch gap-1 sm:gap-2">
                 <div
                   style={{
@@ -382,7 +390,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 xl:grid-cols-4 mt-3 sm:mt-5 justify-between gap-3 sm:gap-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="grid grid-cols-2 xl:grid-cols-4 mt-3 sm:mt-5 justify-between gap-3 sm:gap-5"
+        >
           <HomeBlog />
           <ServiceOffering />
           <SocialLinks />

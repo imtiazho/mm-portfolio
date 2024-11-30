@@ -66,10 +66,14 @@ const About = () => {
       <NavBar />
 
       <div className="w-[95%] sm:w-[80%] m-auto">
-        <div className="grid xl:grid-cols-10 items-end gap-[1rem] sm:gap-[1.5rem] mt-[1rem] sm:mt-[3rem]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="grid xl:grid-cols-10 items-end gap-[1rem] sm:gap-[1.5rem] mt-[1rem] sm:mt-[3rem]"
+        >
           <div className="xl:col-span-3 box-card p-3 sm:p-4">
             <div className="inside-border-box p-3 sm:p-4">
-              <img cl src={userPic} alt="" />
+              <img src={userPic} alt="" />
             </div>
           </div>
 
@@ -99,7 +103,11 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1rem] sm:gap-[1.5rem] mt-4 sm:mt-6">
-          <div className="w-full h-full box-card p-3 sm:p-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="w-full h-full box-card p-3 sm:p-4"
+          >
             <div className="inside-border-box p-4 sm:p-8 text-left flex flex-col gap-[1rem] sm:gap-[2rem]">
               <p className="text-[#fff] font-medium text-[18px] sm:text-[20px] tracking-[0.5px]">
                 EXPERIENCE
@@ -110,7 +118,11 @@ const About = () => {
               ))}
             </div>
           </div>
-          <div className="w-full h-full box-card p-3 sm:p-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="w-full h-full box-card p-3 sm:p-4"
+          >
             <div className="inside-border-box p-4 sm:p-8 text-left flex flex-col gap-[1rem] sm:gap-[2rem]">
               <p className="text-[#fff] font-medium text-[18px] sm:text-[20px] tracking-[0.5px]">
                 EDUCATION
@@ -123,7 +135,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 xl:grid-cols-4 mt-3 sm:mt-5 justify-between gap-3 sm:gap-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="grid grid-cols-2 xl:grid-cols-4 mt-3 sm:mt-5 justify-between gap-3 sm:gap-5"
+        >
           <HomeBlog />
           <LetsWork />
           <SocialLinks />

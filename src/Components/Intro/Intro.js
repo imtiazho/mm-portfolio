@@ -8,7 +8,11 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 
 const Intro = () => {
   return (
-    <div className="w-[95%] sm:w-[85%] m-auto mt-[1rem] sm:mt-[2rem]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="w-[95%] sm:w-[85%] m-auto mt-[1rem] sm:mt-[2rem]"
+    >
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 sm:gap-5 items-end">
         <ProfileCard />
         <HomeProjectAndAbout />

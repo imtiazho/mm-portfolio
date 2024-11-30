@@ -168,6 +168,8 @@ const Works = () => {
               key={eachData._id}
               to={`/project-details/${eachData._id}`}
               className="box-card p-3 sm:p-4 relative"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             >
               <div className="inside-border-box p-3 sm:p-4 flex flex-col gap-5">
                 <img src={eachData.projectImage} alt="" />

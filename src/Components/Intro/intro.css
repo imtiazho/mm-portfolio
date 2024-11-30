@@ -10,7 +10,7 @@
 }
 
 .inside-border-box {
-  border: 0.75px solid rgba(251, 251, 251, 0.05);
+  border: 0.75px solid #fbfbfb0d;
   background: linear-gradient(
     rgba(0, 163, 255, 0.06) 100%,
     rgba(0, 163, 255, 0.5) 0%
@@ -57,6 +57,16 @@ textarea.input-focus-border:focus {
   border: 0.75px solid #0e85c64d;
 }
 
+.service-icon svg {
+  font-size: 65px;
+}
+
+@media (max-width: 640px) {
+  .service-icon svg {
+    font-size: 40px;
+  }
+}
+
 @keyframes marquee {
   0% {
     transform: translate(0, 0);
@@ -65,5 +75,3 @@ textarea.input-focus-border:focus {
     transform: translate(-100%, 0);
   }
 }
-
-/* linear-gradient(180deg,rgba(0,163,255,.05) 0%,rgba(0,163,255,.019999999552965164) 100%) */

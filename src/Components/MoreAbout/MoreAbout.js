@@ -100,7 +100,11 @@ const MoreAbout = () => {
 
       <div className="w-[95%] sm:w-[85%] m-auto">
         <div className="grid xl:grid-cols-10 gap-[1rem] mt-[1rem] sm:mt-[3rem] relative">
-          <div className="xl:col-span-3 xl:h-[90vh] h-fit xl:sticky xl:top-0 xl:bottom-0 xl:right-0 xl:left-0 box-card p-3 sm:p-6">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="xl:col-span-3 xl:h-[90vh] h-fit xl:sticky xl:top-0 xl:bottom-0 xl:right-0 xl:left-0 box-card p-3 sm:p-6"
+          >
             <div
               style={{
                 background:
@@ -183,7 +187,11 @@ const MoreAbout = () => {
               </Link>
             </div>
           </div>
-          <div className="xl:col-span-7 border box-card p-3 sm:p-4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="xl:col-span-7 border box-card p-3 sm:p-4"
+          >
             <div className="inside-border-box text-left p-5 sm:p-8 flex flex-col gap-8 sm:gap-12">
               <div>
                 <p className="text-[#fff] font-medium text-[17px] sm:text-[20px] tracking-[0.5px] mb-2 sm:mb-4">
